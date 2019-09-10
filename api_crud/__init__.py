@@ -1,4 +1,6 @@
 """Start flask app."""
+from os import environ
+
 from flask import Flask
 from flask_jwt_extended import JWTManager
 from flask_migrate import Migrate
@@ -12,7 +14,7 @@ def create_app():
 
     # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://admin:admin@localhost/api_crud_db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    app.config.from_object('api_crud.config.Development')
+    app.config.from_object(f"config.{environ.get('FLASK_ENV')}")
 
     config_db(app)
     config_ma(app)
