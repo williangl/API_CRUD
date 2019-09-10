@@ -1,0 +1,9 @@
+flask
+flask-marshmallow
+Flask-Migrate
+Flask-SQLAlchemy
+Flask-Testing
+marshmallow-sqlalchemy
+SQLAlchemy
+psycopg2-binary
+tox
