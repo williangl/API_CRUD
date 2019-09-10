@@ -9,7 +9,7 @@ bp_costumer = Blueprint('costumer', __name__)
 
 
 @bp_costumer.route('/create-costumer', methods=['POST'])
-def register():
+def register_costumer():
     """Register Costumer endpoint."""
     costumer_schema = CostumerSchema()
 
