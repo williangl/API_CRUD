@@ -16,7 +16,7 @@ def login():
     if error:
         return jsonify(error), 401
 
-    costumer = Costumer.query.filter_by(email=user.email).fisrt()
+    costumer = Costumer.query.filter_by(email=costumer.email).fisrt()
 
     if costumer and costumer.verify_password(request.json['password']):
         access_token = create_access_token(
