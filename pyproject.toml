@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "api_crud"
+version = "0.1.0"
+description = ""
+authors = ["willian GL <williangldzn@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+flask = "*"
+flask-marshmallow = "*"
+Flask-Migrate = "*"
+Flask-SQLAlchemy = "*"
+Flask-Testing = "*"
+marshmallow-sqlalchemy = "*"
+SQLAlchemy = "*"
+psycopg2-binary = "*"
+tox = "*"
+passlib = "*"
+flask-jwt-extended = "*"
+
+
+[tool.poetry.dev-dependencies]
+behave = "*"
+coverage = "*"
+flask = "*"
+flask-marshmallow = "*"
+Flask-Migrate = "*"
+Flask-SQLAlchemy = "*"
+Flask-Testing = "*"
+ipdb = "*"
+marshmallow-sqlalchemy = "*"
+psycopg2-binary = "*"
+SQLAlchemy = "*"
+tox = "*"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
