@@ -12,9 +12,8 @@ from .serializer import configure as config_ma
 def create_app():
     app = Flask(__name__)
 
-    # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://admin:admin@localhost/api_crud_db'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://admin:admin@localhost/api_crud_db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    app.config.from_object(f"config.{environ.get('FLASK_ENV')}")
 
     config_db(app)
     config_ma(app)
