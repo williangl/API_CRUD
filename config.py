@@ -11,5 +11,5 @@ class Development(BaseConfig):
 class Production(BaseConfig):
     SQLALCHEMY_DATABASE_URI = ''
 
-class Testing(BaseConfigs):
+class Testing(BaseConfig):
     TESTING = True
